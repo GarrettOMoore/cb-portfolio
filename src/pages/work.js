@@ -1,18 +1,16 @@
 import React from 'react'
-// import { Link } from 'gatsby'
 import BookOne from '../components/bookone'
-// import BookTwo from '../components/booktwo'
-// import BookThree from '../components/bookthree'
+import BookTwo from '../components/booktwo'
+import BookThree from '../components/bookthree'
 import Image from 'gatsby-image'
 import { css } from '@emotion/core'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import getLandingImg from '../hooks/get-landing'
 
-const IndexPage = () => {
+const Work = () => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Work" />
       <div
         style={{
           display: 'flex',
@@ -21,10 +19,13 @@ const IndexPage = () => {
           marginBottom: `1.45rem`,
         }}
       >
-        <p>Home</p>
+        <p>Work</p>
+        <BookOne />
+        <BookTwo />
+        <BookThree />
       </div>
     </Layout>
   )
 }
 
-export default IndexPage
+export default Work

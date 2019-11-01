@@ -7,7 +7,7 @@ const useBookOnePics = () => {
         edges {
           node {
             sharp: childImageSharp {
-              fluid(maxWidth: 120, maxHeight: 120) {
+              fluid(maxWidth: 240, maxHeight: 240) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

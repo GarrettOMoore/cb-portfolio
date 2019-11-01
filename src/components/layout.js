@@ -10,6 +10,8 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Global, css } from '@emotion/core'
 import Header from './header'
+import Nav from './nav'
+import Footer from './footer'
 import Helmet from 'react-helmet'
 import './layout.css'
 
@@ -51,24 +53,36 @@ const Layout = ({ children }) => {
             overflow: visible;
             margin: 0;
             margin-top: 0.2rem;
-            color: #555;
+            background-color: #f0f2eb;
             font-size: 14px;
             line-height: 1.4;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
             > div {
               margin-top: 0;
             }
             * a {
               decoration: none;
               color: black;
+              height: 100%;
             }
           }
+
+          body {
+            flex-grow: 1;
+          }
           footer {
-            border: 2px solid black;
-            margin-top: 25em;
+            ${'' /* border: 2px solid black; */}
+            flex-shrink: 0;
           }
 
           footer * {
             margin-top: 2rem;
+          }
+
+          nav {
+            height: 100%;
           }
         `}
       />
@@ -90,19 +104,9 @@ const Layout = ({ children }) => {
         }}
       >
         <Header siteTitle={data.site.siteMetadata.title} />
+        <Nav />
         <main>{children}</main>
-        <footer>
-          <a href="mailto:oppositepopularity@gmail.com">Contact</a> <br />
-          Made By{' '}
-          <a
-            style={{ color: 'black', textDecoration: 'none' }}
-            href="https://www.garrettomoore.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Garrett Moore
-          </a>{' '}
-        </footer>
+        <Footer />
       </div>
     </>
   )

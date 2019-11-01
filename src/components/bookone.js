@@ -1,24 +1,30 @@
 import React from 'react'
 import getBookOnePics from '../hooks/get-book-one'
-import ImageGallery from 'react-image-gallery'
+// import ImageGallery from 'react-image-gallery'
+import Image from 'gatsby-image'
+import { css } from '@emotion/core'
 
 const BookOne = () => {
   const bookOne = getBookOnePics()
-  console.log(bookOne)
-  let images = []
-  bookOne.forEach(pic => {
-    images.push({
-      original: pic.node.sharp.fluid.src,
-      thumbnail: pic.node.sharp.fluid.srcSetWebp,
-    })
-  })
-  // const bookOneDisplay = bookOne.map((pic, id) => {
-  // <div key={id}>
-  //   <img src={pic.node.sharp.fluid.src} alt="placeholder" />
-  // </div>
-  // })
 
-  return <ImageGallery items={images} />
+  const bookOneDisplay = bookOne.map((pic, id) => {
+    return (
+      <Image
+        key={id}
+        fluid={pic.node.sharp.fluid}
+        alt={'test'}
+        css={css`
+          width: 100%;
+          border: 2px solid black;
+          * {
+            margin-top: 0;
+          }
+        `}
+      />
+    )
+  })
+
+  return <div>{bookOneDisplay}</div>
 }
 
 export default BookOne
