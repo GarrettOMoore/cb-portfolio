@@ -9,15 +9,15 @@ const BookOne = () => {
 
   const bookOneDisplay = bookOne.map((pic, id) => {
     return (
-      <Image
+      <img
         key={id}
-        fluid={pic.node.sharp.fluid}
+        src={pic.node.sharp.fluid.src}
         alt={'test'}
         css={css`
           width: 100%;
-          border: 2px solid black;
           * {
-            margin-top: 0;
+            margin: 1rem;
+            ${'' /* margin-top: 0; */}
           }
         `}
       />

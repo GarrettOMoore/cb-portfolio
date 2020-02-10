@@ -17,7 +17,7 @@ const About = () => {
         style={{
           display: 'flex',
           flexDirection: 'row',
-          maxWidth: `300px`,
+          maxWidth: `95vw`,
         }}
       >
         <p>

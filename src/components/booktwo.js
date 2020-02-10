@@ -12,7 +12,7 @@ const BookTwo = () => {
     )
   })
 
-  return <main>{bookTwoDisplay}</main>
+  return <main>{bookTwoDisplay[0]}</main>
 }
 
 export default BookTwo

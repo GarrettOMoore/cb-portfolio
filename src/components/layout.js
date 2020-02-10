@@ -57,8 +57,6 @@ const Layout = ({ children }) => {
             font-size: 14px;
             line-height: 1.4;
             min-height: 100%;
-            display: flex;
-            flex-direction: column;
             > div {
               margin-top: 0;
             }
@@ -72,9 +70,13 @@ const Layout = ({ children }) => {
           body {
             flex-grow: 1;
           }
+
+          main {
+            width: 100vw;
+          }
+
           footer {
-            ${'' /* border: 2px solid black; */}
-            flex-shrink: 0;
+            border: 2px solid black;
           }
 
           footer * {
@@ -105,7 +107,17 @@ const Layout = ({ children }) => {
       >
         <Header siteTitle={data.site.siteMetadata.title} />
         <Nav />
-        <main>{children}</main>
+        <main
+          style={{
+            margin: `0 auto`,
+            width: `100%`,
+            border: `2px solid black`,
+            padding: `0px 1.0875rem 1.45rem`,
+            height: `100vh`,
+          }}
+        >
+          {children}
+        </main>
         <Footer />
       </div>
     </>

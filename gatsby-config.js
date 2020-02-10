@@ -3,6 +3,7 @@ module.exports = {
     title: `Christopher Brown`,
     description: `Photography`,
     author: `Garrett Moore`,
+    url: `https://www.cryboy.net`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

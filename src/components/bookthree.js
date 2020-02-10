@@ -11,7 +11,7 @@ const BookThree = () => {
     )
   })
 
-  return <main>{bookThreeDisplay}</main>
+  return <main>{bookThreeDisplay[0]}</main>
 }
 
 export default BookThree

@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 const useBookOnePics = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { relativeDirectory: { regex: "/(book-one)/" } }) {
+      allFile(filter: { relativeDirectory: { regex: "/(spokane)/" } }) {
         edges {
           node {
             sharp: childImageSharp {
