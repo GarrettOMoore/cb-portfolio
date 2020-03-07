@@ -1,15 +1,15 @@
 import React from 'react'
-import BookOne from '../components/bookone'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import BookNav from '../components/booknav'
+import Flowers from '../components/flowers'
 
 const TvFlowers = () => {
   return (
     <Layout>
       <SEO title="TvFlowers" />
       <BookNav />
-      <BookOne />
+      <Flowers />
     </Layout>
   )
 }

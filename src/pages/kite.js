@@ -1,17 +1,17 @@
 import React from 'react'
-import BookOne from '../components/bookone'
+import Kite from '../components/kite'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import BookNav from '../components/booknav'
 
-const Kite = () => {
+const KitePage = () => {
   return (
     <Layout>
       <SEO title="Kite" />
       <BookNav />
-      <BookOne />
+      <Kite />
     </Layout>
   )
 }
 
-export default Kite
+export default KitePage

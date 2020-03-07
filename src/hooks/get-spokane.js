@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby'
 
-const useBookOnePics = () => {
+const useSpokanePics = () => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { relativeDirectory: { regex: "/(spokane)/" } }) {
@@ -19,4 +19,4 @@ const useBookOnePics = () => {
   return data.allFile.edges
 }
 
-export default useBookOnePics
+export default useSpokanePics

@@ -1,17 +1,26 @@
 import React from 'react'
-import BookOne from '../components/bookone'
+import Taipei from '../components/taipei'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { css } from '@emotion/core'
 import BookNav from '../components/booknav'
 
-const Taipei = () => {
+const TaipeiPage = () => {
   return (
     <Layout>
       <SEO title="Taipei" />
       <BookNav />
-      <BookOne />
+      <div
+        className="taipei-box"
+        css={css`
+          display: flex;
+          flex-direction: row;
+        `}
+      >
+        <Taipei />
+      </div>
     </Layout>
   )
 }
 
-export default Taipei
+export default TaipeiPage

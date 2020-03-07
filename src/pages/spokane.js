@@ -1,17 +1,17 @@
 import React from 'react'
-import BookOne from '../components/bookone'
+import Spokane from '../components/spokane'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import BookNav from '../components/booknav'
 
-const Spokane = () => {
+const SpokanePage = () => {
   return (
     <Layout>
       <SEO title="Spokane" />
       <BookNav />
-      <BookOne />
+      <Spokane />
     </Layout>
   )
 }
 
-export default Spokane
+export default SpokanePage

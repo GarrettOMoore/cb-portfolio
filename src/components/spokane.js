@@ -1,13 +1,13 @@
 import React from 'react'
-import getBookOnePics from '../hooks/get-book-one'
+import getSpokanePics from '../hooks/get-spokane'
 // import ImageGallery from 'react-image-gallery'
 import Image from 'gatsby-image'
 import { css } from '@emotion/core'
 
-const BookOne = () => {
-  const bookOne = getBookOnePics()
+const Spokane = () => {
+  const spokane = getSpokanePics()
 
-  const bookOneDisplay = bookOne.map((pic, id) => {
+  const spokaneDisplay = spokane.map((pic, id) => {
     return (
       <img
         key={id}
@@ -15,16 +15,16 @@ const BookOne = () => {
         alt={'test'}
         css={css`
           width: 100%;
-          * {
-            margin: 1rem;
-            ${'' /* margin-top: 0; */}
+          img {
+            margin: 3rem;
+            margin-top: 0;
           }
         `}
       />
     )
   })
 
-  return <div>{bookOneDisplay}</div>
+  return <div>{spokaneDisplay}</div>
 }
 
-export default BookOne
+export default Spokane

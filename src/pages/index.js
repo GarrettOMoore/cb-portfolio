@@ -1,8 +1,4 @@
 import React from 'react'
-// import { Link } from 'gatsby'
-import BookOne from '../components/bookone'
-// import BookTwo from '../components/booktwo'
-// import BookThree from '../components/bookthree'
 import Image from 'gatsby-image'
 import { css } from '@emotion/core'
 import Layout from '../components/layout'

@@ -1,13 +1,13 @@
 import { useStaticQuery, graphql } from 'gatsby'
 
-const useBookTwoPics = () => {
+const useWarpPics = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { relativeDirectory: { regex: "/(book-two)/" } }) {
+      allFile(filter: { relativeDirectory: { regex: "/(warp)/" } }) {
         edges {
           node {
             sharp: childImageSharp {
-              fluid {
+              fluid(maxWidth: 240, maxHeight: 240) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -19,4 +19,4 @@ const useBookTwoPics = () => {
   return data.allFile.edges
 }
 
-export default useBookTwoPics
+export default useWarpPics
