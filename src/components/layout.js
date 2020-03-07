@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
             box-sizing: border-box;
             margin: 0;
             text-align: center;
-            overflow-y: scroll;
+            ${'' /* overflow-y: scroll; */}
             overflow-x: hidden;
             font-family: 'Roboto Mono', monospace;
             scroll-behavior: smooth;
@@ -106,7 +106,7 @@ const Layout = ({ children }) => {
           }
 
           .book-title p {
-            font-size: 3rem;
+            font-size: 2rem;
           }
         `}
       />

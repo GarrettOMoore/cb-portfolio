@@ -22,6 +22,10 @@ const NavLink = styled(Link)`
   &:last-of-type {
     margin: 0;
   }
+
+  a {
+    font-size: 3rem;
+  }
 `
 const bookNav = () => {
   return (
@@ -41,45 +45,45 @@ const bookNav = () => {
       >
         <NavLink
           className="book-title"
-          to="/spokane"
+          to="/warp"
           activeClassName="current-page"
         >
-          <p>Spokane</p> <br />
-        </NavLink>
-        <NavLink
-          className="book-title"
-          to="/taipei"
-          activeClassName="current-page"
-        >
-          <p>Taipei</p> <br />
-        </NavLink>
-        <NavLink
-          className="book-title"
-          to="/consonant"
-          activeClassName="current-page"
-        >
-          <p>Consonant Blends</p> <br />
+          Warp, Stay <br />
         </NavLink>
         <NavLink
           className="book-title"
           to="/tvflowers"
           activeClassName="current-page"
         >
-          <p>Television Flowers</p> <br />
+          Television Flowers <br />
+        </NavLink>
+        <NavLink
+          className="book-title"
+          to="/taipei"
+          activeClassName="current-page"
+        >
+          Taipei <br />
+        </NavLink>
+        <NavLink
+          className="book-title"
+          to="/spokane"
+          activeClassName="current-page"
+        >
+          Spokane <br />
         </NavLink>
         <NavLink
           className="book-title"
           to="/kite"
           activeClassName="current-page"
         >
-          <p>Kite</p> <br />
+          Kite <br />
         </NavLink>
         <NavLink
           className="book-title"
-          to="/warp"
+          to="/consonant"
           activeClassName="current-page"
         >
-          <p>Warp, Stay</p> <br />
+          Consonant Blends <br />
         </NavLink>
       </nav>
     </div>
