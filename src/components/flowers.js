@@ -10,20 +10,14 @@ const Flowers = () => {
     return (
       <img
         key={id}
+        className="book-pic"
         src={pic.node.sharp.fluid.src}
         alt={'test'}
-        css={css`
-          width: 100%;
-          img {
-            margin: 3rem;
-            margin-top: 0;
-          }
-        `}
       />
     )
   })
 
-  return <div>{flowerDisplay}</div>
+  return <div className="single-book-box">{flowerDisplay}</div>
 }
 
 export default Flowers

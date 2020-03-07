@@ -86,6 +86,17 @@ const Layout = ({ children }) => {
           nav {
             height: 100%;
           }
+
+          .single-book-box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 1rem;
+          }
+
+          .book-pic {
+            margin: 1rem;
+          }
         `}
       />
       <Helmet>
