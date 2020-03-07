@@ -26,7 +26,7 @@ const NavLink = styled(Link)`
     margin: 0;
   }
 `
-const Work = () => {
+const Publications = () => {
   return (
     <Layout>
       <SEO title="Work" />
@@ -35,4 +35,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Publications

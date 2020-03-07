@@ -39,23 +39,47 @@ const bookNav = () => {
           marginTop: `1rem`,
         }}
       >
-        <NavLink to="/spokane" activeClassName="current-page">
-          Spokane <br />
+        <NavLink
+          className="book-title"
+          to="/spokane"
+          activeClassName="current-page"
+        >
+          <p>Spokane</p> <br />
         </NavLink>
-        <NavLink to="/taipei" activeClassName="current-page">
-          Taipei <br />
+        <NavLink
+          className="book-title"
+          to="/taipei"
+          activeClassName="current-page"
+        >
+          <p>Taipei</p> <br />
         </NavLink>
-        <NavLink to="/consonant" activeClassName="current-page">
-          Consonant Blends <br />
+        <NavLink
+          className="book-title"
+          to="/consonant"
+          activeClassName="current-page"
+        >
+          <p>Consonant Blends</p> <br />
         </NavLink>
-        <NavLink to="/tvflowers" activeClassName="current-page">
-          Television Flowers <br />
+        <NavLink
+          className="book-title"
+          to="/tvflowers"
+          activeClassName="current-page"
+        >
+          <p>Television Flowers</p> <br />
         </NavLink>
-        <NavLink to="/kite" activeClassName="current-page">
-          Kite <br />
+        <NavLink
+          className="book-title"
+          to="/kite"
+          activeClassName="current-page"
+        >
+          <p>Kite</p> <br />
         </NavLink>
-        <NavLink to="/warp" activeClassName="current-page">
-          Warp, Stay <br />
+        <NavLink
+          className="book-title"
+          to="/warp"
+          activeClassName="current-page"
+        >
+          <p>Warp, Stay</p> <br />
         </NavLink>
       </nav>
     </div>

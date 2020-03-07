@@ -8,7 +8,7 @@ const useSpokanePics = () => {
           node {
             sharp: childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid_withWebp
+                ...GatsbyImageSharpFluid
               }
             }
           }

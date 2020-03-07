@@ -93,11 +93,20 @@ const Layout = ({ children }) => {
             flex-wrap: wrap;
             margin: 0 auto;
             padding: 0;
+            width: 80%;
           }
 
           .book-pic {
+            box-shadow: 0 2px 14px #22222244;
+            z-index: 10;
             margin: 2rem;
             padding: 1rem;
+            width: 50vw;
+            height: 50vh;
+          }
+
+          .book-title p {
+            font-size: 3rem;
           }
         `}
       />

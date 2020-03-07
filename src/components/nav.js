@@ -38,8 +38,11 @@ const Nav = () => (
       <NavLink to="/about" activeClassName="current-page">
         About
       </NavLink>
-      <NavLink to="/work" activeClassName="current-page">
-        Work
+      <NavLink to="/publications" activeClassName="current-page">
+        Publications
+      </NavLink>{' '}
+      <NavLink to="/news" activeClassName="current-page">
+        What's New
       </NavLink>{' '}
     </nav>
   </div>
