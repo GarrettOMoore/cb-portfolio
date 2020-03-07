@@ -91,11 +91,13 @@ const Layout = ({ children }) => {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            margin: 1rem;
+            margin: 0 auto;
+            padding: 0;
           }
 
           .book-pic {
-            margin: 1rem;
+            margin: 2rem;
+            padding: 1rem;
           }
         `}
       />

@@ -7,7 +7,7 @@ const useConsonantPics = () => {
         edges {
           node {
             sharp: childImageSharp {
-              fluid(maxWidth: 240, maxHeight: 240) {
+              fluid {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
