@@ -8,13 +8,7 @@ const About = () => {
   return (
     <Layout>
       <SEO title="About" />
-      <div
-      // style={{
-      //   display: 'flex',
-      //   flexDirection: 'row',
-      //   maxWidth: `95vw`,
-      // }}
-      >
+      <div className="about-body">
         <h1>WEST COAST USA</h1>
         <h2>
           <strong>CB</strong>
@@ -24,10 +18,13 @@ const About = () => {
           <span>I’m your favorite neighbor.</span>
         </h3>{' '}
         <br />
-        Inquiries and book/zine purchase: <br />
-        <span>
-          <strong>Christopherbrown.contact at g m a i l d o t c o m </strong>
-        </span>
+        Inquiries and book/zine purchase: <br /> <br />
+        <h4>
+          <span>
+            <strong>Christopherbrown.contact at g m a i l d o t c o m </strong>
+          </span>{' '}
+        </h4>
+        <br />
         <span>
           <h2>You can’t rush the sunset</h2>
         </span>
@@ -39,8 +36,9 @@ const About = () => {
         </span>
         <h1>Plz visit the homies: </h1>
         <br />
-        Fiveninepres.blogspot.com A-chang.com <br />
-        https://www.frijkecoumans.co.uk/
+        <a href="Fiveninepres.blogspot.com">Fiveninepres.blogspot.com</a> <br />
+        <a href="A-chang.com">A-chang.com</a> <br />
+        <a href="https://www.frijkecoumans.co.uk/">www.frijkecoumans.co.uk</a>
       </div>
     </Layout>
   )

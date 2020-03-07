@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
       <Global
         styles={css`
           * {
+            line-height: normal;
             box-sizing: border-box;
             margin: 0;
             text-align: center;
@@ -59,10 +60,12 @@ const Layout = ({ children }) => {
             min-height: 100%;
             > div {
               margin-top: 0;
+              padding: 0;
             }
             * a {
               decoration: none;
               color: black;
+              padding: 0;
               height: 100%;
             }
           }
@@ -107,6 +110,10 @@ const Layout = ({ children }) => {
 
           .book-title p {
             font-size: 2rem;
+          }
+
+          .about-body {
+            margin: 15rem;
           }
         `}
       />

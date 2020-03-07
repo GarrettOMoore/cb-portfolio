@@ -10,7 +10,7 @@ const Spokane = () => {
       <Image
         key={id}
         className="book-pic"
-        fluid={pic.node.sharp.fluid}
+        sizes={pic.node.sharp.sizes}
         alt={'test'}
       />
     )

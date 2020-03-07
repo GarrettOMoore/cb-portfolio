@@ -42,9 +42,6 @@ const Nav = () => (
         Publications
       </NavLink>{' '}
       <br />
-      <a className="blog-link" href="https://cbphotocurrent.blogspot.com/">
-        What's News
-      </a>
     </nav>
   </div>
 )
