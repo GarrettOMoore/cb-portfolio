@@ -9,7 +9,6 @@ const NavLink = styled(Link)`
   font-size: 1.2rem;
   letter-spacing: 4px;
   margin: 2 0.5rem 0 0;
-  ${'' /* padding: 0.25rem; */}
   text-decoration: none;
 
   &.current-page {

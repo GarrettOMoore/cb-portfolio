@@ -129,9 +129,9 @@ const Layout = ({ children }) => {
             margin: 1rem;
           }
 
-          .about-body {
+          ${'' /* .about-body {
             margin: 15rem;
-          }
+          } */}
 
           ${'' /* .single-photo {
             width: 100%;
