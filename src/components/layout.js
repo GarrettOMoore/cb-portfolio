@@ -92,7 +92,8 @@ const Layout = ({ children }) => {
           }
 
           .landing-image {
-            width: 100vw;
+            width: 50%;
+            height: 50%;
             margin: 0 auto;
             margin-top: 3rem;
           }
