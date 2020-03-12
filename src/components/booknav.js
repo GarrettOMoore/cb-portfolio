@@ -3,17 +3,14 @@ import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 
 const NavLink = styled(Link)`
-  margin: 0 auto;
   color: #26180c;
   height: 100%;
   font-weight: bolder;
-  font-size: 1rem;
-  line-height: 1.2;
+  font-size: 1.2rem;
   letter-spacing: 4px;
-  margin: 0 0.5rem 0 0;
-  padding: 0.25rem;
+  margin: 2 0.5rem 0 0;
+  ${'' /* padding: 0.25rem; */}
   text-decoration: none;
-  ${'' /* font-family: 'Open Sans Condensed', sans-serif; */}
 
   &.current-page {
     border-bottom: 2px solid #222;
@@ -38,11 +35,19 @@ const bookNav = () => {
       }}
     >
       <nav
+        className="book-nav"
         style={{
           margin: `0 auto`,
           marginTop: `1rem`,
         }}
       >
+        <NavLink
+          className="book-title"
+          to="/lotus"
+          activeClassName="current-page"
+        >
+          Lotus, Bauhinia <br />
+        </NavLink>
         <NavLink
           className="book-title"
           to="/warp"

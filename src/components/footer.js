@@ -13,7 +13,7 @@ const Footer = ({ siteTitle }) => (
       <a className="contact-link" href="mailto:oppositepopularity@gmail.com">
         Contact
       </a>{' '}
-      <br />
+      {/* <br />
       <a
         style={{ color: 'black', textDecoration: 'none', fontSize: '8px' }}
         href="https://www.garrettomoore.com"
@@ -21,7 +21,7 @@ const Footer = ({ siteTitle }) => (
         rel="noopener noreferrer"
       >
         Made By Garrett Moore 2019
-      </a>{' '}
+      </a>{' '} */}
     </footer>
   </div>
 )

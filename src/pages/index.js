@@ -13,7 +13,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <div className="landing">
-        <img src={landing.image.sharp.resize.src} />
+        <img className="landing-image" src={landing.image.sharp.resize.src} />
       </div>
     </Layout>
   )

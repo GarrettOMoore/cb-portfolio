@@ -78,16 +78,28 @@ const Layout = ({ children }) => {
             width: 100vw;
           } */}
 
-          footer {
-            border: 2px solid black;
-          }
+
 
           footer * {
             margin-top: 2rem;
+            text-decoration: none;
+            color: black;
           }
 
-          nav {
+          .main-nav {
             height: 100%;
+            border-bottom: 2px solid black;
+          }
+
+          .landing-image {
+            width: 100vw;
+            margin: 0 auto;
+            margin-top: 3rem;
+          }
+
+          .book-nav {
+            overflow-y: hidden;
+            overflow-x: hidden;
           }
 
           .single-book-box {
@@ -96,10 +108,11 @@ const Layout = ({ children }) => {
             flex-wrap: wrap;
             margin: 0 auto;
             padding: 0;
-            width: 80%;
+            width: 100%;
           }
 
           .single-photo {
+            margin-top: 1rem;
             width: 100%;
             height: 100%;
             overflow: hidden;
@@ -107,12 +120,13 @@ const Layout = ({ children }) => {
 
           .book-pic {
             margin: 0 auto;
-            max-width: 50vw;
-            widthmax-height: 50vh;
+            max-width: 75vw;
+            max-height: 100vh;
           }
 
           .book-title p {
             font-size: 2rem;
+            margin: 1rem;
           }
 
           .about-body {
@@ -152,7 +166,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           width: `100%`,
-          border: `8px solid black`,
+          // border: `8px solid black`,
           padding: `0px 1.0875rem 1.45rem`,
           height: `100vh`,
         }}

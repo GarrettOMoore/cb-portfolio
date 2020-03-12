@@ -34,7 +34,7 @@ const Nav = () => (
       opacity: `0.9`,
     }}
   >
-    <nav>
+    <nav className="main-nav">
       <NavLink to="/about" activeClassName="current-page">
         About
       </NavLink>
