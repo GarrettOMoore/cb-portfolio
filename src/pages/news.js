@@ -2,7 +2,6 @@ import React from 'react'
 import { css } from '@emotion/core'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import getLandingImg from '../hooks/get-landing'
 
 const News = () => {
   return (

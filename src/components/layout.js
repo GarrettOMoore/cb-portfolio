@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
         styles={css`
           * {
             line-height: normal;
-            box-sizing: border-box;
+            ${'' /* box-sizing: border-box; */}
             margin: 0;
             text-align: center;
             ${'' /* overflow-y: scroll; */}
@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
             font-size: 14px;
             line-height: 1.4;
             min-height: 100%;
-            > div {
+            ${'' /* > div {
               margin-top: 0;
               padding: 0;
             }
@@ -67,16 +67,16 @@ const Layout = ({ children }) => {
               color: black;
               padding: 0;
               height: 100%;
-            }
+            } */}
           }
 
-          body {
+          ${'' /* body {
             flex-grow: 1;
-          }
+          } */}
 
-          main {
+          ${'' /* main {
             width: 100vw;
-          }
+          } */}
 
           footer {
             border: 2px solid black;
@@ -99,13 +99,16 @@ const Layout = ({ children }) => {
             width: 80%;
           }
 
+          .single-photo {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
+
           .book-pic {
-            box-shadow: 0 2px 14px #22222244;
-            z-index: 10;
-            margin: 2rem;
-            padding: 1rem;
-            width: 50vw;
-            height: 50vh;
+            margin: 0 auto;
+            max-width: 50vw;
+            widthmax-height: 50vh;
           }
 
           .book-title p {
@@ -114,6 +117,15 @@ const Layout = ({ children }) => {
 
           .about-body {
             margin: 15rem;
+          }
+
+          ${'' /* .single-photo {
+            width: 100%;
+            height: 100%;
+          } */}
+
+          .landing {
+            max-width: 100;
           }
         `}
       />
@@ -126,29 +138,29 @@ const Layout = ({ children }) => {
         <title>{data.site.siteMetadata.title}</title>
         <meta name="description" content={data.site.siteMetadata.description} />
       </Helmet>
-      <div
+      {/* <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: `100vw`,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
+      > */}
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <Nav />
+      <main
+        style={{
+          margin: `0 auto`,
+          width: `100%`,
+          border: `8px solid black`,
+          padding: `0px 1.0875rem 1.45rem`,
+          height: `100vh`,
+        }}
       >
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Nav />
-        <main
-          style={{
-            margin: `0 auto`,
-            width: `100%`,
-            border: `2px solid black`,
-            padding: `0px 1.0875rem 1.45rem`,
-            height: `100vh`,
-          }}
-        >
-          {children}
-        </main>
-        <Footer />
-      </div>
+        {children}
+      </main>
+      <Footer />
+      {/* </div> */}
     </>
   )
 }

@@ -1,9 +1,9 @@
 import { useStaticQuery, graphql } from 'gatsby'
 
-const useSpokanePics = () => {
+const useSpokaneTwoPics = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { relativeDirectory: { regex: "/(spokaneone)/" } }) {
+      allFile(filter: { relativeDirectory: { regex: "/(spokanetwo)/" } }) {
         edges {
           node {
             sharp: childImageSharp {
@@ -16,8 +16,8 @@ const useSpokanePics = () => {
       }
     }
   `)
-  console.log('GET SPOKANE QUERY: ', data)
+  console.log('GET SPOKANE TWO QUERY: ', data)
   return data.allFile.edges
 }
 
-export default useSpokanePics
+export default useSpokaneTwoPics

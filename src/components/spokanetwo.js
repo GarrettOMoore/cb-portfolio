@@ -1,12 +1,12 @@
 import React from 'react'
-import getSpokanePics from '../hooks/get-spokane'
+import getSpokaneTwoPics from '../hooks/use-spokanetwo'
 import Image from 'gatsby-image'
 import { css } from '@emotion/core'
 
-const Spokane = () => {
-  const spokane = getSpokanePics()
-  const spokaneDisplay = spokane.map((pic, id) => {
-    console.log('PIIIICCCCC: ', pic)
+const SpokaneTwo = () => {
+  const spokaneTwo = getSpokaneTwoPics()
+  const spokaneTwoDisplay = spokaneTwo.map((pic, id) => {
+    console.log('PIIIICCCCC: ', pic.node.childImageSharp.fluid)
     return (
       <div className="single-photo" key={id}>
         <img
@@ -19,7 +19,7 @@ const Spokane = () => {
     )
   })
 
-  return <div>{spokaneDisplay}</div>
+  return <div>{spokaneTwoDisplay}</div>
 }
 
-export default Spokane
+export default SpokaneTwo

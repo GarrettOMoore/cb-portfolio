@@ -8,12 +8,14 @@ const Flowers = () => {
 
   const flowerDisplay = flower.map((pic, id) => {
     return (
-      <img
-        key={id}
-        className="book-pic"
-        src={pic.node.sharp.fluid.src}
-        alt={'test'}
-      />
+      <div className="single-photo" key={id}>
+        <img
+          key={id}
+          className="book-pic"
+          src={pic.node.sharp.fluid.src}
+          alt={'test'}
+        />
+      </div>
     )
   })
 

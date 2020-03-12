@@ -34,7 +34,7 @@ const bookNav = () => {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: `space-between`,
-        maxWidth: `90vw`,
+        maxWidth: `100vw`,
       }}
     >
       <nav
@@ -69,7 +69,14 @@ const bookNav = () => {
           to="/spokane"
           activeClassName="current-page"
         >
-          Spokane <br />
+          Spokane I <br />
+        </NavLink>
+        <NavLink
+          className="book-title"
+          to="/spokanetwo"
+          activeClassName="current-page"
+        >
+          Spokane II <br />
         </NavLink>
         <NavLink
           className="book-title"
