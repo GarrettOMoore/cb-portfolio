@@ -85,6 +85,15 @@ const Layout = ({ children }) => {
             text-decoration: none;
             color: black;
           }
+          .about-sub {
+            margin-left: 40vw;
+          }
+
+          .about-sub * {
+            text-align: left;
+            text-decoration: none;
+            color: black;
+          }
 
           .main-nav {
             height: 100%;
@@ -92,8 +101,10 @@ const Layout = ({ children }) => {
           }
 
           .landing-image {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
+            max-width: 80vw;
+            max-height: 70vh;
             margin: 0 auto;
             margin-top: 3rem;
           }

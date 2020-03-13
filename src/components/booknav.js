@@ -11,7 +11,7 @@ const NavLink = styled(Link)`
   margin: 2 0.5rem 0 0;
   text-decoration: none;
 
-  &.current-page {
+  &.current-book {
     border-bottom: 2px solid #222;
   }
 
@@ -43,56 +43,56 @@ const bookNav = () => {
         <NavLink
           className="book-title"
           to="/lotus"
-          activeClassName="current-page"
+          activeClassName="current-book"
         >
           Lotus, Bauhinia <br />
         </NavLink>
         <NavLink
           className="book-title"
           to="/warp"
-          activeClassName="current-page"
+          activeClassName="current-book"
         >
           Warp, Stay <br />
         </NavLink>
         <NavLink
           className="book-title"
           to="/tvflowers"
-          activeClassName="current-page"
+          activeClassName="current-book"
         >
           Television Flowers <br />
         </NavLink>
         <NavLink
           className="book-title"
           to="/taipei"
-          activeClassName="current-page"
+          activeClassName="current-book"
         >
           Taipei <br />
         </NavLink>
         <NavLink
           className="book-title"
           to="/spokane"
-          activeClassName="current-page"
+          activeClassName="current-book"
         >
           Spokane I <br />
         </NavLink>
         <NavLink
           className="book-title"
           to="/spokanetwo"
-          activeClassName="current-page"
+          activeClassName="current-book"
         >
           Spokane II <br />
         </NavLink>
         <NavLink
           className="book-title"
           to="/kite"
-          activeClassName="current-page"
+          activeClassName="current-book"
         >
           Kite <br />
         </NavLink>
         <NavLink
           className="book-title"
           to="/consonant"
-          activeClassName="current-page"
+          activeClassName="current-book"
         >
           Consonant Blends <br />
         </NavLink>
