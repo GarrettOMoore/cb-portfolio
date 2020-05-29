@@ -35,10 +35,14 @@ const Nav = () => (
     }}
   >
     <nav className="main-nav">
-      <NavLink to="/about" activeClassName="current-page">
+      <NavLink className="nav-item" to="/about" activeClassName="current-page">
         About
       </NavLink>
-      <NavLink to="/publications" activeClassName="current-page">
+      <NavLink
+        className="nav-item"
+        to="/publications"
+        activeClassName="current-page"
+      >
         Publications
       </NavLink>{' '}
       <br />

@@ -86,7 +86,7 @@ const Layout = ({ children }) => {
             color: black;
           }
           .about-sub {
-            margin-left: 40vw;
+            margin-left: 5vw;
           }
 
           .about-sub * {
@@ -101,10 +101,8 @@ const Layout = ({ children }) => {
           }
 
           .landing-image {
-            width: 100%;
-            height: 100%;
-            max-width: 80vw;
-            max-height: 70vh;
+            ${'' /* max-width: 80vw;
+            max-height: 70vh; */}
             margin: 0 auto;
             margin-top: 3rem;
           }
@@ -180,7 +178,7 @@ const Layout = ({ children }) => {
           width: `100%`,
           // border: `8px solid black`,
           padding: `0px 1.0875rem 1.45rem`,
-          height: `100vh`,
+          height: `100%`,
         }}
       >
         {children}
