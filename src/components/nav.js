@@ -45,6 +45,13 @@ const Nav = () => (
       >
         Publications
       </NavLink>{' '}
+      <NavLink
+        className="nav-item"
+        href="cbphotodotnet.blogspot.com"
+        activeClassName="current-page"
+      >
+        News
+      </NavLink>{' '}
       <br />
     </nav>
   </div>

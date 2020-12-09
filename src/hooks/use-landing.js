@@ -5,9 +5,9 @@ const useLanding = () => {
     query {
       image: file(relativePath: { eq: "landing.jpg" }) {
         sharp: childImageSharp {
-          resize(width: 600, height: 600) {
-            src
-          }
+          fixed {
+          src
+        }
         }
       }
     }

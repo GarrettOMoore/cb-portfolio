@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Christopher Brown`,
+    title: `CB`,
     description: `Photography`,
     author: `Garrett Moore`,
     url: `https://www.cryboy.net`,

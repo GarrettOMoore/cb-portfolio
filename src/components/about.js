@@ -9,42 +9,11 @@ const AboutContent = () => {
       <div className="about-sub">
         <br />
         <p>CB</p> <br />
-        <p>I’m your favorite neighbor. </p>
+        <p>WEST COAST USA </p>
         <br />
         <p>
-          <strong>Inquiries and book/zine purchase: </strong>
-        </p>
-        <p>
-          <strong>Christopherbrown.contact at g m a i l d o t c o m</strong>
-        </p>
-        <br />
-        <p>You can’t rush the sunset</p>
-        <br />
-        <p>No limits, no control</p> <br />
-        <p>Being rigid is a bummer</p> <br />
-        <p>
-          <strong>Plz visit the homies: </strong>
-        </p>
-        <br />
-        <p>
-          <a
-            className="homie-link"
-            href="https://www.Fiveninepres.blogspot.com"
-          >
-            Fiveninepres.blogspot.com
-          </a>{' '}
-        </p>
-        <br />
-        <p>
-          <a className="homie-link" href="https://www.A-chang.com">
-            A-chang.com
-          </a>{' '}
-        </p>{' '}
-        <br />
-        <p>
-          <a className="homie-link" href="https://www.frijkecoumans.co.uk/">
-            www.frijkecoumans.co.uk
-          </a>
+          Inquiries and book/zine purchase: <br/>
+          Christopherbrown.contact at g m a i l d o t c o m
         </p>
       </div>
     </div>
